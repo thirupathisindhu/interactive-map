@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.search-container {
+  margin-top: 10px;
+}
+
+.search-container input {
+  padding: 5px;
+  width: 220px;
+}
+
+.search-container button {
+  padding: 6px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#results {
+  background: white;
+  color: black;
+  max-height: 150px;
+  overflow-y: auto;
+  text-align: left;
+  width: 250px;
+  margin: 10px auto;
+  border-radius: 5px;
+  display: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#results div {
+  padding: 8px;
+  cursor: pointer;
+}
+#results div:hover {
+  background: #eee;
+}
+
+#map {
+  height: calc(100vh - 180px);
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .search-container input {
+    width: 90%;
+  }
+}
